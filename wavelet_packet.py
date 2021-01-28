@@ -3,7 +3,7 @@ import pywt
 import matplotlib.pyplot as plt
 import cv2
 
-def (img, x, y, z):
+def wavelet_coeff(img, x, y, z):
 	b,g,r = img[:, :, 0], img[:, :, 1], img[:, :, 2]
 
 	b_wavelet3 = pywt.WaveletPacket2D(b, 'haar', mode='periodization', maxlevel=3)
